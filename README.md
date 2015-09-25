@@ -1,1 +1,1 @@
-This project is a recomposition of the sekonline site. The big change is the server side rendering. Also an MVC implementation is on the road.
+Basic MVC implementation of a site using php and Twig as templating system.
