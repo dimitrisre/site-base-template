@@ -1,0 +1,56 @@
+#videos{
+	position: relative;
+	float: left;
+	height: 285px;
+	width: 100%;
+}
+
+#videoplayer{
+	width: 100%;
+	height: 256px;
+	position: relative;
+	float: left;
+}
+
+#videolist{
+	position: relative;
+	float: left;
+	width: 100%;
+	height: 256px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+#videos .video_link{
+	position: relative;
+	float: left;
+	width: 99%;
+	height: 30px;
+	font-size: 0.75em;
+	padding: 2px 0px 0px 5px;
+	border-bottom: 1px groove black;
+	background-color: rgb(243, 243, 243);
+	cursor: pointer;
+}
+
+#videos .video_link:hover , .active{
+	background-color: #d8d8d8;
+}
+
+#videos .video_link:active{
+	background-color: #c7c7c7;	
+}
+
+#videos .more_videos{
+	position: relative;
+	float: left;
+	width: 100%;
+	font-size: 0.8em;
+	text-align: center;
+	background-color: #A3A3A3;
+	cursor: pointer;
+}
+
+#videos .more_videos:hover{
+	background-color: #727272; 
+}

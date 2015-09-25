@@ -1,0 +1,13 @@
+<div id="tar" data-header="Αρχειοθήκη">
+	{% if header %}
+	<div class="template_header">
+		{{header}}
+	</div>
+	{% endif %}
+	<div class="tar_content">
+		{% for tar in tars %}
+			<div class="tar_entry"><a href="{{tar.link}}"><img class="article_image" src="{{tar.img}}"/>{{tar.title}}</a></div>
+		{% endfor %}
+		<div class="more_articles">More...</div>
+	</div>
+</div>

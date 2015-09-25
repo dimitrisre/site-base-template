@@ -1,0 +1,154 @@
+#header {
+	position: relative;
+	float: left;
+	width: 100%;
+	height: 100%;
+}
+#header > .menu_container > div{
+	cursor: pointer;
+}
+
+#header > .menu_container > div:hover {
+	background-color: #e50408; /* Old browsers */
+	background-color: -moz-linear-gradient(top, #e50408 44%, #ff0509 100%); /* FF3.6+ */
+	background-color: -webkit-gradient(linear, left top, left bottom, color-stop(44%,#e50408), color-stop(100%,#ff0509)); /* Chrome,Safari4+ */
+	background-color: -webkit-linear-gradient(top, #e50408 44%,#ff0509 100%); /* Chrome10+,Safari5.1+ */
+	background-color: -o-linear-gradient(top, #e50408 44%,#ff0509 100%); /* Opera 11.10+ */
+	background-color: -ms-linear-gradient(top, #e50408 44%,#ff0509 100%); /* IE10+ */
+	background-color: linear-gradient(to bottom, #e50408 44%,#ff0509 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e50408', endColorstr='#ff0509',GradientType=0 ); /* IE6-9 */
+
+	background-image:url('../../images/arrow.png');
+	background-position: 3 -170;
+	background-repeat: no-repeat;
+	color: #fff;
+	text-shadow: #000 2px 2px 4px;
+}
+
+#header > .menu_container > div:hover a{
+	color: #fff;
+}
+#header > .menu_container a{
+	text-decoration: none;
+	color: #000;
+}
+
+#header > .menu_container > div:hover > .menu_items{
+	display: block;
+	color : #000;
+	text-shadow: none;
+	width: 250px;
+}
+#header .search:hover{
+	background: #fff !important;
+	color: #000 !important;
+	text-shadow: none !important;
+}
+
+#header .menu_items{
+	background-color: #fff;
+	z-index: 10;
+	width: 0px;
+	position: relative;
+	top: 3px;
+	text-align: left;
+	border-top: solid 5px red;
+	display: none;
+	box-shadow: 0px 0px 10px #727272;
+
+}
+#header .menu_items:hover{
+	width: 250px;
+}
+#header .menu_item{
+	padding: 5px;
+	border: solid 1px #F1F1F1;
+	font-size: 1em;
+	background-color: #fff;
+}
+#header .menu_item:hover{
+	background-color: #E4E4E4;
+	color: #f00;
+}
+#header .sekonline_image{
+	width: 50%;
+	position: relative;
+	height: 80%;
+	background: url('../../images/sek-online.gif') 8px 22px no-repeat;
+	float: left;
+}
+
+#header .sek_image{
+	position: relative;
+	width: 50%;
+	height: 80%;
+	background: url('../../images/sek.gif') 155px 25px no-repeat;
+	float: left;
+}
+
+#header .menu_container{
+	position: relative;
+	float: left;
+	width: 100%;
+	height: 30%;
+	border-top: 2px groove #FFF;
+}
+
+#header .menu_element{
+	position: relative;
+	float: left;
+	width: 100px;
+	height: 49%;
+	text-align: center;
+	padding-top: 5px;
+	border-right: 2px groove #fff;
+	font-size: 0.9em;
+	font-family: "Times New Roman";
+	background: url('../../images/arrow.png') 3 -114 no-repeat
+}
+
+#header .search{
+	border-right: none !important;
+	background-image: none;
+}
+
+#header .search_box{
+	width: 80%;
+	font-size: 0.8em;
+	border-radius: 10px;
+	padding-left: 5px;
+	color: #7A7A7A;
+}
+
+#header .search_box:focus{
+	color: #000;
+}
+
+#header .home{
+	color: #920000;
+	font-weight: bold;
+	background-image: none;
+}
+#header .home:hover{
+	background-image : none !important;
+}
+
+#header .cinema{
+	background: none;
+}
+
+#header .contact{
+	background: none;
+}
+
+#header .events{
+	background-image: none !important;
+}
+
+#header .cinema:hover{
+	background-image: none !important;
+}
+
+#header .contact:hover, .events:hover{
+	background-image: none !important;
+}

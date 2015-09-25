@@ -1,0 +1,94 @@
+
+#search {
+	position: relative;
+    float: left;
+    width: 100%;
+    border: 1px solid #C1C1C1;
+}
+
+#search .title {
+	position: relative;
+	float: left;
+	width: 100%;
+	font-family: timesnewroman;
+	color: rgb(54, 54, 54);
+	padding: 5px;
+}
+
+#results_sum {
+	padding-left: 10px;
+	color: rgb(0, 0, 0);
+	font-weight: bold;	
+}
+
+#search .article {
+	position: relative;
+	float: left;
+	width: 100%;
+	height: 104px;
+	margin-bottom: 10px;
+	border-bottom: 2px groove #ECECEC;
+	text-decoration: none;
+	color: #000;
+}
+
+#search .article_image {
+	position: relative;
+	float: left;
+	max-width: 95px;
+	max-height: 65px;
+	margin: 5px;
+}
+#search .image_wrapper{
+	position: relative;
+	float: left;
+	width: 100px;
+	height: 100%;
+}
+
+#search .article_title {
+	position: relative;
+	float: left;
+	width: 65%;
+	overflow: hidden;
+	text-align: left;
+	padding: 4px 2px 0px 6px;
+	cursor: pointer;
+	font-family: timesnewroman;
+	left: 10px;
+	font-size: 1.3em;
+	font-weight: bold;
+}
+
+#search .article_abstract {
+	width: 80%;
+	font-size: 1em;
+	text-align: justify;
+	left: 17px;
+	position: relative;
+	float: left;
+	font-family: timesnewroman;
+}
+
+#search .more_articles {
+	position: relative;
+	float: left;
+	background-color: #868686;
+	color: #fff;
+	text-align: center;
+	width: 100%;
+	cursor: pointer;
+}
+
+#search .article_date {
+	position: relative;
+	float: left;
+	color: #6D6D6D;
+	font-size: 0.7em;
+	width: 67%;
+	padding: 0px 0px 1px 25px;
+}
+
+#search_keywords{
+	color : #0027CF;
+}

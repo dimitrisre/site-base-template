@@ -1,0 +1,96 @@
+#news{
+	position: relative;
+	float: left;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	border: double 1px grey;
+}
+
+#news .article1,
+.article2, 
+.article3, 
+.article4, 
+.article5{
+	position: absolute;
+	float: left;
+	width: 100%;
+	height: 100%;
+}
+
+#news .article1{
+	background: url('../../images/slideshow/s1.jpg') 0 0 no-repeat;
+	background-size: 100%;
+}
+#news .article2{
+	background: url('../../images/slideshow/s2.jpg') 0 0 no-repeat;
+	background-size: 100%;
+}
+#news .article3{
+	background: url('../../images/slideshow/s3.jpg') 0 0 no-repeat;
+	background-size: 100%;
+}
+#news .article4{
+	background: url('../../images/slideshow/s4.jpg') 0 0 no-repeat;
+	background-size: 100%;
+}
+#news .article5{
+	background: url('../../images/slideshow/s5.jpg') 0 0 no-repeat;
+	background-size: 100%;
+}
+
+#news .grey_blanket{
+	position: relative;
+	float: left;
+	left: 10%;
+	width: 35%;
+	height: 100%;
+	background-color: rgba(128, 128, 128, 0.5);
+	
+}
+
+#news .grey_blanket > .basic_link {
+	position: relative;
+	float: left;
+	font-size: 1.3em;
+	font-weight: bold;
+	color: white;
+	width: 100%;
+	text-decoration: none;
+}
+
+#news .grey_blanket > .more_link {
+	position: relative;
+	float: left;
+	color: #FFFFFF;
+	font-size: 0.8em;
+	background-color: #2C2C2C;
+	text-decoration: none;
+}
+
+#news .grey_blanket > .more_link:hover{
+	background-color: #ffffff;
+	color: #000000;
+}
+
+#news .left_nav{
+	position: absolute;
+	float: left;
+	width: 16px;
+	height: 16px;
+	top: 90%;
+	left: 85%;
+	background: url('../../images/nav-left.png') 0 0 no-repeat;
+	cursor: pointer;
+}
+
+#news .right_nav{
+	position: absolute;
+	float: left;
+	width: 16px;
+	height: 16px;
+	top: 90%;
+	left: 90%;
+	background: url('../../images/nav-right.png') 0 0 no-repeat;
+	cursor: pointer;
+}

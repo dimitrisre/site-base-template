@@ -1,0 +1,344 @@
+#main{
+	position: relative;
+	float: left;
+	width: 100%;
+	box-shadow: 0px 0px 20px rgb(114, 114, 114);
+	border-radius: 10px;
+}
+
+#tabs{
+	position: relative;
+	float: left;
+	width: 100%;
+	border: groove 1px #555;
+	border-radius: 10px;
+}
+
+#art_image{
+	position: relative;
+	width: 80%;
+	left: 10px;
+}
+
+#tabs > ul {
+	position: relative;
+	float: left;
+	width: 96%;
+
+	background: #ff0509; /* Old browsers */
+	background: -moz-linear-gradient(top, #ff0509 0%, #e50408 44%, #aa0000 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff0509), color-stop(44%,#e50408), color-stop(100%,#aa0000)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #ff0509 0%,#e50408 44%,#aa0000 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #ff0509 0%,#e50408 44%,#aa0000 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #ff0509 0%,#e50408 44%,#aa0000 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #ff0509 0%,#e50408 44%,#aa0000 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0509', endColorstr='#aa0000',GradientType=0 ); /* IE6-9 */
+}
+
+#tabs > ul > li{
+	position: relative;
+	float: left;
+	padding: 10px;
+	background-color: #F00;
+	border-radius: 5px;
+	box-shadow: 7px 7px 10px #666;
+	margin: 2px;
+	list-style: none;
+	cursor: pointer;
+
+	background: #ff0509; /* Old browsers */
+	background: -moz-linear-gradient(top, #ff0509 0%, #e50408 44%, #aa0000 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff0509), color-stop(44%,#e50408), color-stop(100%,#aa0000)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #ff0509 0%,#e50408 44%,#aa0000 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #ff0509 0%,#e50408 44%,#aa0000 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #ff0509 0%,#e50408 44%,#aa0000 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #ff0509 0%,#e50408 44%,#aa0000 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0509', endColorstr='#aa0000',GradientType=0 ); /* IE6-9 */
+}
+
+#tabs > ul > li > a{
+	text-decoration: none;
+	color: #fff;
+} 
+
+#tabs .li_active {
+	box-shadow: 1px 1px 2px #666;
+}
+
+#tabs-1, #tabs-2, #tabs-3, #tabs-4{
+	position: relative;
+	float: left;
+	width: 100%;
+}
+
+#main fieldset{
+	position: relative;
+	float: left;
+	width: 245px;
+}
+
+#main .button_wrapper{
+	position: relative;
+	float: left;
+	width: 100%;
+	padding-left: 50%;
+}
+
+#main input[type=textarea]{
+	position: relative;
+	float: right;
+}
+
+#main label{
+	position: relative;
+	float: left;
+}
+
+#main .row{
+	position: relative;
+	float: left;
+	width: 100%;
+}
+
+#main .video_type{
+	position: relative;
+	float: left;
+	left: 19%;
+}
+
+#main .remove_video{
+	position: relative;
+	float: right;
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+	text-align: center;
+	background-color: #F00;
+	color: #fff;
+	font-size: 16px;
+	font-family: monospace;
+	top: -13px;
+	cursor: pointer;
+}
+
+#main .remove_video:hover{
+	background-color: #000;
+}
+
+#main .add_video {
+	position: relative;
+	float: left;
+	top: 45px;
+}
+#main .article {
+	position: relative;
+	float: left;
+	width: 771px;
+	height: 745px;
+	left: 12%;
+	padding: 10px;
+	background-color: #DA0000;
+	margin: auto;
+}
+
+#main .article_image{
+	position: relative;
+	float: left;
+	width: 150px;
+	height: 200px;
+	border: groove 2px #F1F1F1;
+	margin: 0px 0px 10px 6px;
+	background: #5E0000;
+	color: #fff;
+	text-align: center;
+}
+
+#main .title_div{
+	position: relative;
+	float: left;
+	top: 10%;
+}
+#main .title_div > input , .link_div > input{
+	position: relative;
+	float: right;
+	width: 300px;
+	margin-left: 33px;
+}
+
+#main .link_div > label , .title_div > label{
+	position: relative;
+	float: left;
+	padding-left: 10px;
+}
+#main .link_div{
+	position: relative;
+	float: left;
+	top: 10%;
+	margin-left: 11px;
+}
+
+#main .article_body{
+	position: relative;
+	float: right;
+	width: 615px;
+	height: 72%;
+
+}
+
+#article_body_parent{
+	position: relative;
+	float: left;
+	top: 80px;
+}
+
+#article_type {
+	position: relative;
+	float: left;
+	top: 11%;
+	left: 8%;
+}
+
+#main .article_type_label {
+	position: relative;
+	float: left;
+	top: 11%;
+	left: 3%;
+}
+
+#main iframe{
+	height : 200px !important;
+}
+#main .mce-tinymce{
+	position: relative;
+	float: right;
+	height: 310px;
+}
+
+#article_scroller {
+	position: relative;
+	float: left;
+	width: 100%;
+}
+
+#article_scroller .topics{
+	position: relative;
+	float: left;
+}
+
+#article_scroller .topics .topic_row{
+	position: relative;
+	float: left;
+}
+
+#article_scroller .topics .topic_no{
+	position: relative;
+	float: left;
+	width: 10px;
+	font-size: 16px;
+}
+
+#photos .photo_album{
+	position: relative;
+	float: left;
+	width: 70%;
+	text-align: center;
+	border: 2px groove #fff;
+	margin-left: 10px;
+}
+
+#photos .photo_album .photo{
+	position: relative;
+	float: left;
+	height: 100px;
+	width: 100px;
+	max-height: 100px;
+	margin: 5px;
+}
+
+#photo_albums_list {
+	position: relative;
+	float: left;
+	border: 2px groove #fff;
+	height: 500px;
+	width: 250px;
+	overflow: auto;
+}
+
+#photos .button_wrapper{
+	padding-left: 0px;
+}
+
+#photos .chosen_image{
+	position: relative;
+	float: left;
+	max-width: 100%;
+	margin: auto;
+}
+
+#photos .chosen_image_wrapper{
+	position: relative;
+	float: left;
+	width: 70%;
+	border: 2px groove #fff;
+	margin-left: 10px;
+	height: 440px;
+}
+
+form#general {
+	width: 50%;
+	position: relative;
+	float: left;
+}
+
+form#general_edit {
+	position: relative;
+	float: right;
+	width: 50%;
+}
+form#general_edit > fieldset{
+	width: 380px;
+}
+#main .general_div {
+	position: relative;
+	float: left;
+	font-size: 1em;
+	width: 100%;
+	border: 2px groove;
+	margin-bottom: 15px;
+}
+
+#main .general_div img{
+	width : 100%;
+}
+
+#main .general_div > a {
+	width: 100%;
+	position: relative;
+	float: left;
+	text-align: center;
+}
+
+#main .middle_preview{
+	width: 70%;
+	margin-left: 70px;
+}
+
+#main .general_div input[type="text"] {
+	width: 70%;
+}
+
+input#article_id {
+	margin-left: 325px;
+}
+
+#general_files > div{
+	width: 100%;
+	padding-left: 10px;
+}
+
+#generalType{
+	position: relative;
+	float: left;
+	width: 34%;
+	left: 10%;
+}

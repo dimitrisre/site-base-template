@@ -1,0 +1,6 @@
+<div id="middle">
+	{% for general in generals %}
+		<div class="general_div"><a href="{{general.link}}"><img class="article_image" src="{{general.img}}"/>{{general.title}}</a>
+		</div>
+	{% endfor %}
+</div>

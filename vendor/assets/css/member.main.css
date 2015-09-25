@@ -1,0 +1,37 @@
+#main{
+	position: relative;
+    float: left;
+    width: 100%;
+    border: groove 1px rgba(255, 255, 255, 0.2);
+}
+#main h1 {
+	font-size: 1.5em;
+	width: 32%;
+	text-align: center;
+}
+#main .label {
+	position: relative;
+	float: left;
+	width: 35%;
+	padding: 2px 0px 2px 0px;
+}
+
+#main .input_field {
+	position: relative;
+	float: left;
+	width: 65%;
+}
+#main .member_info {
+	position: relative;
+	float: left;
+	width: 42%;
+	border: groove 2px #fff;
+	padding: 5px;
+}
+
+#main .submit_wrapper{
+	position: relative;
+	float: left;
+	width: 100%;
+	padding-left: 13%;
+}

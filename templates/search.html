@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block head %}
+	<title>Sekonline search - {{keywords}}</title>
+{% endblock %}
+
+{% block body %}
+	<div id="search_wrapper">
+		<div id="search">
+	<div class="results">
+		<div class="title">
+			Results found for (<span id="search_keywords">{{keywords}}</span>): <span id="results_sum">{{articles|length}}</span>
+		</div>
+		<div class="contents">
+			{% for article in articles %}
+				<a href="article.php?id={{article.id}}" class="article" data-id="{{article.id}}" data-link="{{article.src}}"><div class="image_wrapper"><img class="article_image" src="{{article.img}}" /></div><div class="article_title">{{article.title|striptags}}</div><div class="article_date">{{article.date}}</div><div class="article_abstract">{{article.body|striptags|truncate(200)}}</div></a>
+			{% endfor %}
+			<noscript>Please enable your javascript.
+			Checkout this guide <a href="http://www.computerhope.com/issues/ch000891.htm">here</a>
+			</noscript>
+		</div>
+	</div>
+</div>
+	</div>
+{% endblock %}
+
+{% block styles %}
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:700,400&subset=latin,greek' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="assets/css/search.layout.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/search.main.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/header.css">
+{% endblock %}
+
+{% block javascript %}
+	<script type="text/javascript" src="assets/js/libs/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="assets/js/libs/underscore-min.js"></script>
+	<script type="text/javascript" src="assets/js/header.main.js"></script>
+
+	<script type="text/javascript">
+
+		$(document).ready( function( ){
+			var Header = new header( );
+			// var Search = new search( );
+			
+			Header.init({ });
+			// Search.init({ });
+
+		} );
+	</script>
+{% endblock %}

@@ -1,0 +1,19 @@
+<div id="{{id}}">
+	{% if header %}
+	<div class="template_header">
+		{{header}}
+	</div>
+	{% endif %}
+
+	<div class="articles_list">
+	{% for article in articles %}
+		<a href="article.php?id={{article.id}}" class="article" data-id="{{article.id}}" data-link="{{article.src}}">
+		<img class="article_image" src="{{article.img}}" />
+		<div class="article_title">{{article.title}}</div>
+		<div class="article_abstract">{{article.body}}</div>
+		<div class="article_date">{{article.date}}</div>
+		</a>
+	{% endfor %}
+	<div class="more_articles">More...</div>
+	</div>
+</div>

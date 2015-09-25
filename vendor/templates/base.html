@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	
+	{% block head %}
+	<title>sekonline - Σοσιαλιστικό Εργατικό Κόμμα</title>
+	<meta property="og:title" content="sekonline - Σοσιαλιστικό Εργατικό Κόμμα"/>
+	<meta property="og:url" content="http://sekonline.gr"/>
+	<meta property="og:image" content="http://sekonline.gr/images/articles/swp_fist_2.gif" />
+	<meta property="og:description" content="Σοσιαλιστικό Εργατικό Κόμμα" />
+	<meta property="og:type" content="article" />
+	{% endblock %}
+	
+</head>
+<body>
+	<div id="body_wrapper">
+		<div id="header_wrapper">
+			{{ include('subtemplates/header.html') }}
+		</div>
+
+		{% block body %}{% endblock %}
+		
+		<div id="webstats_wrapper">
+			{{ include('subtemplates/webstats.html') }}
+		</div>
+	</div>
+	
+</body>
+	{% block styles %}{% endblock %}
+
+	{% block javascript %}{% endblock %}
+</html>

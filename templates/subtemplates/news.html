@@ -1,0 +1,22 @@
+<div id="news" data-header="Κυριότερες ειδήσεις">
+	{% if header %}
+	<div class="template_header">
+		{{header}}
+	</div>
+	{% endif %}
+	<div class="news_roller">
+		{% for new in news %}
+		{% if loop.index < 6 %}
+			<div class="article{{loop.index}}">
+				<div class="grey_blanket">
+					<a class="basic_link" href="{{new.src}}">{{new.desc}}</a>
+					<a class="more_link" href="{{new.src}}">More...</a>
+				</div>
+			</div>
+		{% endif %}
+		{% endfor %}
+		<div class="left_nav"></div>
+		<div class="right_nav"></div>
+	</div>
+
+</div>

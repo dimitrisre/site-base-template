@@ -1,0 +1,19 @@
+#middle .general_div {
+	position: relative;
+	float: left;
+	font-size: 1em;
+	width: 100%;
+}
+
+#middle .general_div img{
+	width : 100%;
+}
+
+#middle .general_div > a {
+	width: 100%;
+	position: relative;
+	float: left;
+	text-align: center;
+	border-bottom: 2px groove #fff;
+	padding-bottom: 25px;
+}

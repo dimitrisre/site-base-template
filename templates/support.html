@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% block body %}
+<div id="financial_wrapper">
+	<div id="financial" data-header="Ενισχύστε">
+	
+	{% if header %}
+	<div class="template_header">
+		{{header}}
+	</div>
+	{% endif %}
+	
+	<p>Ενισχύστε οικονομικά! Έστω και 1 ευρώ είναι πολύτιμο!</p>
+	<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+		<input type="hidden" name="cmd" value="_donations">
+		<input type="hidden" name="business" value="dionisia_pylarinou@yahoo.gr">
+		<input type="hidden" name="lc" value="US">
+		<input type="hidden" name="item_name" value="Support our campaign to smash capitalism!">
+		<input type="hidden" name="no_note" value="0">
+		Amount: <input type="text" name="amount" id="amount">
+		<select name="currency_code" id="currency_code">
+			<option value="EUR">EUR</option>
+  			<option value="USD">USD</option>
+ 			<option value="GBP">GBP</option>
+ 			<option value="CHF">CHF</option>
+ 			<option value="AUD">AUD</option>
+ 			<option value="HKD">HKD</option>
+ 			<option value="CAD">CAD</option>
+ 			<option value="JPY">JPY</option>
+ 			<option value="NSD">NSD</option>
+ 			<option value="SGD">SGD</option>
+ 			<option value="SEK">SEK</option>
+ 			<option value="DKK">DKK</option>
+ 			<option value="PLN">PLN</option>
+ 			<option value="NOK">NOK</option>
+ 			<option value="HUF">HUF</option>
+ 			<option value="CZK">CZK</option>
+ 			<option value="ILS">ILS</option>
+ 			<option value="MXN">MXN</option>
+		</select>
+		<input type="hidden" name="currency_code" value="EUR">
+		<input type="hidden" name="bn" value="PP-DonationsBF:btn_donate_LG.gif:NonHostedGuest">
+		<input type="submit" value="submit" class="submit">
+</form>
+</div>
+</div>
+{% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" type="text/css" href="assets/css/financial.layout.css" />
+<link rel="stylesheet" type="text/css" href="assets/css/financial.css" />
+<link rel="stylesheet" type="text/css" href="assets/css/header.css" />
+<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:700,400&subset=latin,greek' rel='stylesheet' type='text/css'>
+{% endblock %}
+
+{% block javascript %}
+<script type="text/javascript" src="assets/js/header.main.js" />
+<script type="text/javascript">
+		$(document).ready( function( ){
+			var Header = new header();
+			Header.init({ });
+		} );
+</script>
+{% endblock %}

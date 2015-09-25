@@ -1,0 +1,50 @@
+body{
+	
+}
+
+#body_wrapper{
+	width: 1024px;
+	margin: auto;
+}
+
+#body_wrapper .template_header{
+	
+	background: #ff0509; /* Old browsers */
+	background: -moz-linear-gradient(top, #ff0509 0%, #e50408 44%, #aa0000 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff0509), color-stop(44%,#e50408), color-stop(100%,#aa0000)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #ff0509 0%,#e50408 44%,#aa0000 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #ff0509 0%,#e50408 44%,#aa0000 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #ff0509 0%,#e50408 44%,#aa0000 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #ff0509 0%,#e50408 44%,#aa0000 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0509', endColorstr='#aa0000',GradientType=0 ); /* IE6-9 */
+	width: 112%;
+	padding: 8px;
+	position: relative;
+	float: left;
+	top: -10px;
+	left: -10px;
+	color: #fff;
+	text-shadow: #000 0px -1px;
+}
+
+#header_wrapper{
+	position: relative;
+	float: left;
+	width: 100%;
+	height: 145px;
+	margin-bottom: 20px;
+}
+
+#webstats_wrapper{
+	position: relative;
+	float: left;
+	width: 100%;
+	text-align: center;
+}
+
+#main_wrapper {
+	position: relative;
+	float: left;
+	width: 100%;
+}
+

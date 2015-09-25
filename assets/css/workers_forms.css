@@ -1,0 +1,21 @@
+#forms .workers_form {
+	position: relative;
+	float: left;
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+}
+
+#forms .workers_form a > img{
+	width: 140px;
+}
+
+#forms .workers_form > a {
+	position: relative;
+    float: left;
+    width: 100%;
+    font-size: 1em;
+    word-wrap: normal;
+    white-space: pre-line;
+    height: 238px;
+}

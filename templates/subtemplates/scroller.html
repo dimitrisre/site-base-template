@@ -1,0 +1,10 @@
+<div id="scroller">
+	<div class="scroller_container scroll_animation">
+		{% for a in scrolls %}
+		<div class="scroll_div">
+			<a href="{{a.src}}">{{a.title}}</a>
+			<div class="seperator">.</div>
+		</div>
+		{% endfor %}
+	</div>
+</div>

@@ -1,0 +1,15 @@
+<div id="videos" data-header="Video">
+	{% if header %}
+	<div class="template_header">
+		{{header}}
+	</div>
+	{% endif %}
+<!-- 	<div id="videoplayer">
+	</div> -->
+	<div id="videolist">
+	{% for video in videos %}
+		<div class="video_link" data-type="{{video.type}}" data-link="{{video.src}}">{{video.title}}</div>
+	{% endfor %}
+	<div class="more_videos">More...</div>
+	</div>
+</div>

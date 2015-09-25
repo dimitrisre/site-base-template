@@ -1,0 +1,138 @@
+{% extends "base.html" %}
+
+{% block body %}
+	<div id="scroller_wrapper">
+		{{ include('subtemplates/scroller.html',
+					{scrolls:scrolls}) }}
+	</div>
+	<div id="row1">
+		<noscript>Please enable your javascript.
+	Checkout this guide <a href="http://www.computerhope.com/issues/ch000891.htm">here</a>
+	</noscript>
+		<div id="news_wrapper">
+			{{ include('subtemplates/news.html',
+			{news: news}) 
+			 }}
+		</div>
+
+		<div id="elections_wrapper">
+			{{ include('subtemplates/books.html',
+			{header:"Εκδόσεις"}) }}
+		</div>
+		<div id="banners_wrapper">
+			{{ include('subtemplates/banners.html')}}
+		</div>
+	</div>
+	
+	<div id="column1">
+		<div id="act_wrapper">
+			{{ include('subtemplates/act_politics.html',
+						 {header:"Η μάχη των εκλογών",
+						  id:"act",
+						  articles:actArticles
+						  }) 
+			}}
+		</div>
+		<div id="politics_wrapper">
+			{{ include('subtemplates/act_politics.html', 
+						{header:"Δράση και πολιτική",
+			 			 id:"politics",
+			 			 articles:politicsArticles
+			 			 }) 
+			}}
+		</div>
+		<div id="tar_wrapper">
+			{{ include('subtemplates/tar.html',
+			{header:"Αρχειοθήκη",
+			 tars: tars}) }}
+		</div>	
+	</div>
+
+	<div id="column3">
+<!-- 		<div id="financial_wrapper">
+			{{ include('subtemplates/financial.html',
+				{header:"Ενισχύστε"}) }}
+		</div> -->
+		<div id="videos_wrapper">
+			{{include('subtemplates/videos.html',
+					{header:"Video",
+					 videos:videos})}}
+		</div>
+		<div id="campaigns_wrapper">
+			{{ include('subtemplates/campaigns.html',
+				{header:"Καμπάνιες"})}}
+		</div>	
+		<div id="forms_wrapper">
+			{{ include('subtemplates/forms.html',
+				{header:"Εργατικά έντυπα"})}}
+		</div>
+	</div>
+
+	<div id="column2">
+		<div id="middle_wrapper">
+			{{ include('subtemplates/middle.html',
+				{generals:generals}) }}
+		</div>
+	</div>
+{% endblock %}
+
+{% block styles %}
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:700,400&subset=latin,greek' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="assets/css/layout.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/header.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/news.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/financial.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/videos.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/scroller.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/politics.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/workers_forms.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/general.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/elections.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/tar.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/campaigns.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/act.css">
+{% endblock %}
+
+{% block javascript %}
+	<script type="text/javascript" src="assets/js/libs/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="assets/js/libs/popcorn-complete.min.js"></script>
+	<script type="text/javascript" src="assets/js/libs/underscore-min.js"></script>
+	<script type="text/javascript" src="assets/js/libs/ICanHaz.min.js"></script>
+	
+	<!-- <script type="text/javascript" src="assets/js/combined_js_files.js"></script> -->
+	<script type="text/javascript" src="assets/js/news.main.js"></script>
+	<script type="text/javascript" src="assets/js/videos.main.js"></script>
+	<script type="text/javascript" src="assets/js/scroller.main.js"></script>
+	<script type="text/javascript" src="assets/js/articles.main.js"></script>
+	<script type="text/javascript" src="assets/js/header.main.js"></script>
+	<script type="text/javascript" src="assets/js/general.main.js"></script>
+	<script type="text/javascript" src="assets/js/tar.main.js"></script>
+
+	<script type="text/javascript">
+
+		$(document).ready( function( ){
+			var News = new news( );
+			var Videos = new videos( );
+			var Scroller = new scroller( );
+			var Articles = new articles( );
+			var Act = new articles( );
+			var Header = new header( );
+			var General = new general( );
+			var Tar = new tar( );
+
+			$politics_root = $('#politics');
+			$act_root = $('#act');
+
+			News.init	 ( { url: "private/load_articles.php" } );
+			Videos.init	 ( { url: "private/load.php" } );
+			Scroller.init( { url: "private/load_scroller.php" } );
+			Articles.init( { url: "private/load.php" , type: "politics", "root":$politics_root} );
+			Act.init	 ( { url: "private/load.php" , type: "act", "root":$act_root} );
+			General.init ( { url: "private/load_general.php" } );
+			Tar.init	 ( { url: "private/load.php" } );
+
+			Header.init({ });
+
+		} );
+	</script>	
+{% endblock %}
